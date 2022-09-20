@@ -1,0 +1,11 @@
+{
+  "name": "vanilla-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aline Bastos",
+  "license": "ISC"
+}
