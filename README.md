@@ -14,7 +14,7 @@ $ git clone git@github.com:AlineBastos/vanilla-project.git
 $ cd vanilla=project
 
 # Execute the project
-$ ng serve
+$ npm start
 
 # Access http://127.0.0.1:8125/
 ```
