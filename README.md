@@ -4,7 +4,7 @@ An HTML, CSS and JS vanilla project.
 
 ### [WEBSITE DEMO](https://fintech-vanilla-project.netlify.app/)
 
-### How to excecute de application
+### How to execute de application
 
 ```bash
 # Clone this repository
