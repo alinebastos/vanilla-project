@@ -1,54 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Fintech | Onde seu dinheiro rende um mundo melhor</title>
+    
+    <meta name="author" content="Fintech">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fintech">
+    <meta property="og:title" content= "Fintech | Onde seu dinheiro rende um mundo melhor">
+    <meta name="description" content="Somos o parceiro ideal para te acompanhar e ajudar em todas suas conquistas. De forma responsável e transparente, nós vamos juntos organizar sua vida financeira.">        
+    <meta property="og:description" content="Somos o parceiro ideal para te acompanhar e ajudar em todas suas conquistas. De forma responsável e transparente, nós vamos juntos organizar sua vida financeira.">
+    <meta property="og:image" content="images/Fintech.png">
+
+    <link rel="canonical" href="/home/">
+    <script src="https://kit.fontawesome.com/3577c1620a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <a href="/" class="main-logo"><img src="./images/Fintech.png" alt="Fintech" /></a>
-            <select>
-                <option>Acessar conta com</option>
-                <option>CNPJ</option>
-                <option>CPF</option>
-            </select>
-            <input type="text" value="" placeholder="CNPJ" />
-            <button>-></button>
-            <button>Abra sua conta</button>
-            <button>Busca</button>
-            <span>Menu</span>
-            <div>
-                <p>Acesso Rápido +</p>
-                <ul>
-                    <li><a href="#">Localizar Agência</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">2ª Via de Boleto</a></li>
-                    <li><a href="#">Atendimento</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
-                </ul>
-                <p>Para Você +</p>
-                <ul>
-                    <li><a href="#">Conta Corrente</a></li>
-                    <li><a href="#">Cartões</a></li>
-                    <li><a href="#"><span>Novo</span> PIX</a></li>
-                    <li><a href="#">Consórcios</a></li>
-                    <li><a href="#">Créditos</a></li>
-                    <li><a href="#">Investimentos</a></li>
-                    <li><a href="#">Pagamentos</a></li>
-                    <li><a href="#">Previdência</a></li>
-                    <li><a href="#">Máquina de Cartões</a></li>
-                    <li><a href="#">Seguros</a></li>
-                    <li><a href="#">Câmbio</a></li>
-                    <li><a href="#">Certificado Digital</a></li>
-                    <li><a href="#">Momentos</a></li>
-                </ul>
-                <p>Para Sua Empresa +</p>
-                <ul>
+    <header>
+        <a href="/" class="main-logo"><img src="./images/Fintech.png" alt="Fintech" /></a>
+        <div class="header-infos">
+            <div class="acessar-conta">
+                <select>
+                    <option>Acessar conta com</option>
+                    <option>CNPJ</option>
+                    <option>CPF</option>
+                </select>
+                <input type="text" value="" placeholder="CNPJ" />
+                <button class="acessar-conta-button"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <button class="abra-sua-conta">Abra sua conta</button>
+            <div class="busca-menu">
+                <button class="button-busca"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="buttonMenu" class="button-menu"><i class="fa-solid fa-bars"></i></button>
+                <div id="floatingMenu" class="floating-menu">
+                    <button>Acessar conta</button>
+                    <button>Abra sua conta</button>
+                    <span id="closeMenu" class="floating-menu-open-close"><i class="fa-solid fa-close"></i></span>
+                    <div class="box-title open">
+                        <span class="title">Acesso Rápido</span> <span class="open-close"><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Localizar Agência</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">2ª Via de Boleto</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                    <div class="box-title">
+                        <span class="title">Para Você</span> <span class="open-close"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Conta Corrente</a></li>
+                        <li><a href="#">Cartões</a></li>
+                        <li><a href="#">PIX</a></li>
+                        <li><a href="#">Consórcios</a></li>
+                        <li><a href="#">Créditos</a></li>
+                        <li><a href="#">Investimentos</a></li>
+                        <li><a href="#">Pagamentos</a></li>
+                        <li><a href="#">Previdência</a></li>
+                        <li><a href="#">Máquina de Cartões</a></li>
+                        <li><a href="#">Seguros</a></li>
+                        <li><a href="#">Câmbio</a></li>
+                        <li><a href="#">Certificado Digital</a></li>
+                        <li><a href="#">Momentos</a></li>
+                    </ul>
+                    <div class="box-title">
+                        <span class="title">Para Sua Empresa</span> <span class="open-close"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Cartão empresarial</a></li>
+                        <li><a href="#">Máquina de cartões</a></li>
+                        <li><a href="#">MEI</a></li>
+                        <li><a href="#">Pix PJ</a></li>
+                        <li><a href="#">Seguros</a></li>
+                        <li><a href="#">Consórcios</a></li>
+                        <li><a href="#">Câmbio e comércio exterior</a></li>
+                        <li><a href="#">Pagamentos e recebimentos</a></li>
+                        <li><a href="#">Crédito</a></li>
+                        <li><a href="#">Previdência</a></li>
+                        <li><a href="#">Certificado digital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-text">
+            <h1 class="main-title">Nós temos as melhores oportunidades <span>para você</span></h2>
+            <p class="sub-title">Somos o parceiro ideal para te acompanhar e ajudar em todas as suas conquistas. De forma responsável e transparente, nós vamos, juntos, organizar a sua vida financeira.</p>
+        </div>
+        <img src="./images/home-image.jpg" class="main-image" alt="Mulher trabalhando no notebook" />
+        <div class="main-menus">
+            <div class="menu-para-voce">
+                <h3 class="title-menu-para-voce">Para Você</h3>
+                <ul class="list-menu-para-voce">
                     <li><a href="#">Conta Corrente</a></li>
                     <li><a href="#">Cartões</a></li>
                     <li><a href="#"><span>Novo</span> PIX</a></li>
@@ -64,28 +117,14 @@
                     <li><a href="#">Momentos</a></li>
                 </ul>
             </div>
-        </header>
-        <main>
-            <h2>Nós temos as melhores oportunidades <span>para você</span></h2>
-            <p>Somos o parceiro ideal para te acompanhar e ajudar em todas as suas conquistas. De forma responsável e transparente, nós vamos, juntos, organizar a sua vida financeira.</p>
-            <img src="./images/home-image.jpg" alt="Mulher trabalhando no notebook" />
-            <h3>Para Você</h3>
-            <ul>
-                <li><a href="#">Conta Corrente</a></li>
-                <li><a href="#">Cartões</a></li>
-                <li><a href="#"><span>Novo</span> PIX</a></li>
-                <li><a href="#">Consórcios</a></li>
-                <li><a href="#">Créditos</a></li>
-                <li><a href="#">Investimentos</a></li>
-                <li><a href="#">Pagamentos</a></li>
-                <li><a href="#">Previdência</a></li>
-                <li><a href="#">Máquina de Cartões</a></li>
-                <li><a href="#">Seguros</a></li>
-                <li><a href="#">Câmbio</a></li>
-                <li><a href="#">Certificado Digital</a></li>
-                <li><a href="#">Momentos</a></li>
-            </ul>
-        </main>
-    </div>
+            <div class="menu-para-sua-empresa">
+                <h3 class="title-menu-para-sua-empresa">Para sua Empresa</h3>
+            </div>
+            <div class="menu-para-seu-agronegocio">
+                <h3 class="title-menu-para-seu-agronegocio">Para seu Agronegócio</h3>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

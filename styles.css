@@ -1,0 +1,406 @@
+/* 
+    CSS Reset
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Nunito", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+    color: #8e8e8e;
+}
+ol, ul {
+	list-style: none;
+}
+a { text-decoration: none;}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.color {
+    color: #64C832;
+}
+h1, h2 {
+    font-family: "Exo 2", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-infos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.acessar-conta {
+    position: absolute;
+    display: none;
+}
+
+.acessar-conta select,
+.acessar-conta input {
+    font-family: "Nunito", sans-serif;
+    color: #8e8e8e;
+    height: 26px;
+    line-height: 26px;
+    border: 0;
+}
+
+.acessar-conta select:focus,
+.acessar-conta input:focus {
+    outline: 1px solid #64C832;
+}
+
+.acessar-conta select {
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.acessar-conta input {
+    border-bottom: 1px solid #ccc;
+}
+
+.acessar-conta input::placeholder {
+    opacity: .5;
+}
+
+.acessar-conta-button {
+    border: 0;
+    background: none;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.acessar-conta-button i {
+    color: #64C832;
+}
+
+.abra-sua-conta {
+    border: 0;
+    background-color: #64C832;
+    color: #fff;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    display: none;
+}
+
+.abra-sua-conta:hover {
+    background-color: #33820D;
+}
+
+.busca-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-busca {
+    width: 60px;
+    height: 60px;
+    background-color: #364237;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button-menu {
+    width: 60px;
+    height: 60px;
+    background-color: #33820D;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.floating-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    background-color: #44a613;
+    color: #fff;
+    width: 320px;
+    padding: 20px 20px 0;
+    z-index: 2;
+}
+
+.floating-menu button {
+    border: 0;
+    background-color: #3a8f10;
+    color: #fff;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.floating-menu.open {
+    display: block;
+}
+
+.floating-menu-open-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #364237;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.floating-menu-open-close i {
+    line-height: 30px;
+}
+
+.floating-menu .box-title {
+    width: 280px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;
+    border-top: 1px solid #55c11f;
+}
+
+.floating-menu .box-title.open {
+    background-color: #3a8f10;
+}
+
+.floating-menu .title {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.floating-menu-title .open-close {
+    font-size: 30px;
+}
+
+.floating-menu .menu-list {
+    padding: 20px;
+    display: none;
+}
+
+.floating-menu .box-title.open + .menu-list {
+    display: block;
+}
+
+.floating-menu a {
+    line-height: 60px;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 0 0 0 50px;
+        height: 80px;
+    }
+
+    .acessar-conta {
+        position: relative;
+        display: block;
+    }
+
+    .abra-sua-conta {
+        height: 50px;
+        padding: 0 30px;
+        margin: 0 30px 0 100px;
+        display: block;
+    }
+
+    .button-busca {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    
+    .button-menu {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .floating-menu {
+        width: 800px;
+        padding: 50px 150px 0;
+    }
+
+    .floating-menu button {
+        display: none;
+    }
+
+    .floating-menu .box-title {
+        width: 500px;
+        height: 100px;
+        padding: 0 50px;
+    }
+
+    .floating-menu .menu-list {
+        padding: 20px 50px;
+        display: none;
+    }
+
+    .floating-menu-open-close {
+        top: 30px;
+        right: 30px;
+        font-size: 50px;
+    }
+}
+
+/* MAIN */
+
+main {
+    background-color: #fbfbfb;
+    text-align: center;
+}
+
+.main-text {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.main-title {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.main-title span {
+    font-family: "Exo 2", sans-serif;
+    color: #64C832;
+    font-weight: 400;
+}
+
+.sub-title {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.main-menus {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.title-menu-para-voce {
+    color: #64C832;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.list-menu-para-voce {    
+    margin-bottom: 60px;
+}
+
+.list-menu-para-voce a {
+    display: block;
+    font-weight: 700;
+    line-height: 26px;
+    color: #8e8e8e;
+}
+
+.list-menu-para-voce a:hover {
+    color: #64C832;
+}
+
+.list-menu-para-voce span {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #ffeb9a;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.title-menu-para-sua-empresa,
+.title-menu-para-seu-agronegocio {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.title-menu-para-seu-agronegocio {
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px 50px 0;
+        background-color: #fbfbfb;
+        padding: 30px 100px;
+        text-align: left;
+    }
+    
+    .main-text {
+        margin: 0;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+    .main-menus {
+        text-align: right;
+        margin: 0;
+    }
+}
